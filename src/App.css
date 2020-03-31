@@ -1,12 +1,108 @@
-.App {
+.add-book-btn {
+  margin: 0 0 30px 30px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.add-book-btn:hover {
+  transform: scale(1.1);
+}
+.app {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.back-link img,
+.book-search img {
+  width: 50px;
+}
+.book-search img:hover {
+  transform: scale(1.1);
+}
+.book-search {
+  text-align: right;
+  margin: 0 40px 40px 0;
+}
+.back-link img:hover {
+  transform: scale(1.1);
+}
+.books-authors li {
+  list-style: none;
+}
+.search-books-container input {
+  width: 50%;
+  padding: 10px;
+  font-size: 14px;
+}
+.search-books-section {
+  display: inline-block;
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.library-book {
+  width: 30%;
+  display: inline-block;
+}
+.books-authors ul {
+  padding: 0;
+}
+.books-authors li {
+  color: #aba5a5;
+}
+.book-container img {
+  height: 180px;
+  width: 130px;
 }
 
+.books-section li {
+  list-style: none;
+}
+
+.books-section {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.book-shelf-selector {
+  margin-top: 15px;
+}
+.book-shelf-selector select {
+  border: 1px solid #000;
+}
+.bookshelf-title {
+  background-color: #ddd;
+  padding: 10px;
+}
+.footer {
+  text-align: center;
+  background-color: #ddd;
+  border-top: 1px solid #000;
+}
+.footer p,
+.footer h3 {
+  margin: 0;
+  padding: 10px 0;
+}
+.email {
+  padding-bottom: 20px;
+}
+.individual-book {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+.my-read-title h1 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 50px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,8 +110,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,14 +119,35 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #000;
 }
-
+.book img {
+  height: 170px;
+  width: 128px;
+}
+.search-container {
+  min-height: 350px;
+}
+.search-container-link {
+  padding: 40px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* ================ MediaQueries =================== */
+
+@media only screen and (max-width: 760px) {
+  .books-section {
+    display: block;
+  }
+  .individual-book {
+    display: block;
+    width: 100%;
   }
 }
